@@ -27,9 +27,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGIN_URL='index'
+LOGIN_REDIRECT_URL = 'index'
+LOGOUT_REDIRECT_URL = 'index'
+
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',

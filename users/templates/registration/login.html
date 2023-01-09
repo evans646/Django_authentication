@@ -1,0 +1,13 @@
+{%extends 'base.html'%}
+{% block content %}
+<div class="py-5 container" align="center">
+  <h1>Log In</h1>
+  <form  method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button  type="submit" align="right">
+     Login
+  </button> 
+</form>
+</div>
+{% endblock %} 
